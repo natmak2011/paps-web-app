@@ -48,7 +48,7 @@ const CreateWatchlist = () => {
                 })
                 .catch(function (error) {
                     console.error(error);
-                    alert('Error happened ${error}');
+                    alert("Error happened");
                 });
 
 
@@ -56,8 +56,7 @@ const CreateWatchlist = () => {
 
 
 
-    return (
-        <div >
+    return  <div >
 
             <p> Please fill the bellow form to insert Watchlist. </p>
 
@@ -75,7 +74,7 @@ const CreateWatchlist = () => {
             <div style={{marginTop: '20px'}}> <Button variant="contained" onClick={() => setIsReady(true)}>Create Watchlist</Button> </div>
 
         </div>
-    );
+
 }
 
 export default CreateWatchlist;
