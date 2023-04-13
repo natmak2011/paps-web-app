@@ -1,5 +1,6 @@
 {
-  "name": "paps",
+  "name": "paps-web-app",
+  "homepage": "https://natmak2011.github.io/paps-web-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
