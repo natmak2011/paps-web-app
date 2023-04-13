@@ -4,6 +4,7 @@ import {TextField} from "@mui/material";
 import DatePickerJs from "./DatePcker";
 import dayjs from "dayjs";
 import Button from "@mui/material/Button";
+import React  from 'react';
 
 const CreateRequest = () => {
 
@@ -53,13 +54,13 @@ const CreateRequest = () => {
 
         <p> Please fill the bellow form to request for replacement passport. </p>
 
-        <div> <TextField  label="First Name" variant="standard" value={firstName} required={true}  onChange={(e) => setFirstName(e.target.value)}/> </div>
-        <div> <TextField  label="Middle Name" variant="standard" value={middleName} required={true} onChange={(e) => setMiddleName(e.target.value)} /> </div>
-        <div> <TextField  label="Last Name" variant="standard" value={lastName} required={true} onChange={(e) => setLastName(e.target.value)} /> </div>
+        <div> <TextField  label="First Name" variant="outlined" value={firstName} required={true}  onChange={(e) => setFirstName(e.target.value)}/> </div>
+        <div> <TextField  label="Middle Name" variant="outlined" value={middleName} required={true} onChange={(e) => setMiddleName(e.target.value)} /> </div>
+        <div> <TextField  label="Last Name" variant="outlined" value={lastName} required={true} onChange={(e) => setLastName(e.target.value)} /> </div>
         <div> <DatePickerJs label="Date of Birth"  defaultValue={dayjs('2022-04-17')} value={dateOfBirth} required={true} onChange={(e) => setDateOfBirth(e.target.value)}/> </div>
-        <div> <TextField label="Phone Number" variant="standard" value={phoneNumber} required={true} onChange={(e) => setPhoneNumber(e.target.value)} /> </div>
-        <div> <TextField label="Email" variant="standard" value={email} required={true} onChange={(e) => setEmail(e.target.value)} /> </div>
-        <div> <TextField  label="Passport Number" variant="standard" value={passportNumber} required={true} onChange={(e) => setPassportNumber(e.target.value)} /> </div>
+        <div> <TextField label="Phone Number" variant="outlined" value={phoneNumber} required={true} onChange={(e) => setPhoneNumber(e.target.value)} /> </div>
+        <div> <TextField label="Email" variant="outlined" value={email} required={true} onChange={(e) => setEmail(e.target.value)} /> </div>
+        <div> <TextField  label="Passport Number" variant="outlined" value={passportNumber} required={true} onChange={(e) => setPassportNumber(e.target.value)} /> </div>
 
         <div style={{marginTop: '20px'}}> <Button variant="contained" onClick={() => setIsReady(true)}>Create Request</Button> </div>
 
