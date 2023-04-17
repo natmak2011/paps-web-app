@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {HashRouter} from "react-router-dom";
 import {createBrowserHistory} from "history";
 
+
 const history = createBrowserHistory();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

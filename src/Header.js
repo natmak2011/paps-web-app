@@ -6,8 +6,11 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import {AirplaneTicket} from "@mui/icons-material";
 import {Link} from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 export default function Header() {
+
+    const navigate = useNavigate();
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
@@ -26,7 +29,10 @@ export default function Header() {
                         Passport Application and Payment Service PAPS
                         </Link>
                     </Typography>
-                    <Button color="inherit">STATUS</Button>
+
+                    <Button variant="contained" onClick={() => navigate('/request')}>Create Request</Button>
+                    <Button variant="contained" onClick={() => navigate('/watchlist')}>Create Watchlist</Button>
+                    <Button variant="contained" onClick={() => navigate('/watchlist/matches')}>List Matches</Button>
                 </Toolbar>
             </AppBar>
         </Box>

@@ -4,6 +4,7 @@ import {TextField} from "@mui/material";
 import DatePickerJs from "./DatePcker";
 import dayjs from "dayjs";
 import Button from "@mui/material/Button";
+import React from 'react';
 
 const CreateWatchlist = () => {
 
@@ -60,16 +61,16 @@ const CreateWatchlist = () => {
 
             <p> Please fill the bellow form to insert Watchlist. </p>
 
-            <div> <TextField  label="Court Name" variant="standard" value={courtName} required={true}  onChange={(e) => setCourtName(e.target.value)}/> </div>
-            <div> <TextField  label="First Name" variant="standard" value={firstName} required={true}  onChange={(e) => setFirstName(e.target.value)}/> </div>
-            <div> <TextField  label="Middle Name" variant="standard" value={middleName} required={true} onChange={(e) => setMiddleName(e.target.value)} /> </div>
-            <div> <TextField  label="Last Name" variant="standard" value={lastName} required={true} onChange={(e) => setLastName(e.target.value)} /> </div>
+            <div> <TextField  label="Court Name" variant="outlined" value={courtName} required={true}  onChange={(e) => setCourtName(e.target.value)}/> </div>
+            <div> <TextField  label="First Name" variant="outlined" value={firstName} required={true}  onChange={(e) => setFirstName(e.target.value)}/> </div>
+            <div> <TextField  label="Middle Name" variant="outlined" value={middleName} required={true} onChange={(e) => setMiddleName(e.target.value)} /> </div>
+            <div> <TextField  label="Last Name" variant="outlined" value={lastName} required={true} onChange={(e) => setLastName(e.target.value)} /> </div>
             <div> <DatePickerJs label="Date of Birth"  defaultValue={dayjs('2022-04-17')} value={dateOfBirth} required={true} onChange={(e) => setDateOfBirth(e.target.value)}/> </div>
-            <div> <TextField label="Court Number" variant="standard" value={courtNumber} required={true} onChange={(e) => setCourtNumber(e.target.value)} /> </div>
-            <div> <TextField label="Creation User" variant="standard" value={creationUser} required={true} onChange={(e) => setCreationUser(e.target.value)} /> </div>
-            <div> <TextField label="Modification User" variant="standard" value={modificationUser} required={true} onChange={(e) => setModificationUser(e.target.value)} /> </div>
-            <div> <TextField  label="Passport Number" variant="standard" value={passportNumber} required={true} onChange={(e) => setPassportNumber(e.target.value)} /> </div>
-            <div> <TextField label="Watchlist Action" variant="standard" value={watchlistAction} required={true} onChange={(e) => setWatchlistAction(e.target.value)} /> </div>
+            <div> <TextField label="Court Number" variant="outlined" value={courtNumber} required={true} onChange={(e) => setCourtNumber(e.target.value)} /> </div>
+            <div> <TextField label="Creation User" variant="outlined" value={creationUser} required={true} onChange={(e) => setCreationUser(e.target.value)} /> </div>
+            <div> <TextField label="Modification User" variant="outlined" value={modificationUser} required={true} onChange={(e) => setModificationUser(e.target.value)} /> </div>
+            <div> <TextField  label="Passport Number" variant="outlined" value={passportNumber} required={true} onChange={(e) => setPassportNumber(e.target.value)} /> </div>
+            <div> <TextField label="Watchlist Action" variant="outlined" value={watchlistAction} required={true} onChange={(e) => setWatchlistAction(e.target.value)} /> </div>
 
             <div style={{marginTop: '20px'}}> <Button variant="contained" onClick={() => setIsReady(true)}>Create Watchlist</Button> </div>
 

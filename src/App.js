@@ -1,9 +1,11 @@
 
 import './App.css';
+import React  from 'react';
 import Header from "./Header";
 import CreateRequest from "./CreateRequest";
 import CreateWatchlist  from "./CreateWatchlist";
 import {Route, Routes} from "react-router-dom";
+import WatchlistMatch from "./WatchlistMatch";
 
 const App = () => {
 
@@ -11,13 +13,13 @@ const App = () => {
        <>
         <Header/>
 
-            <Routes>
+<Routes>
+                  <Route path="/" element={<CreateRequest/>}/>
+                  <Route path="/request" element={<CreateRequest/>}/>
+                  <Route path="/watchlist" element={<CreateWatchlist/>}/>
+                  <Route path="/watchlist/matches" element={<WatchlistMatch/>}/>
 
-                <Route path="/" element={<CreateRequest/>}/>
-                <Route path="/watchlist" element={<CreateWatchlist/>}/>
-
-
-            </Routes>
+</Routes>
         </>
 
 
