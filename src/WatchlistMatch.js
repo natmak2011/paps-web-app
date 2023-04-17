@@ -29,6 +29,7 @@ function ListWatchlistMatch() {
     }, []);
 
     const columns: GridColDef[] = [
+
         {field: 'request_id', headerName: 'Request ID', width: 100, sortable: false,},
         {field: 'watchlist_id', headerName: 'Watchlist ID', width: 100, sortable: false,},
         {field: 'applicant_fn', headerName: 'Applicant F_name', width: 150},
@@ -37,6 +38,7 @@ function ListWatchlistMatch() {
         {field: 'candidate_fn', headerName: 'Candidate F_name', width: 150},
         {field: 'candidate_mn', headerName: 'Candidate M_name', width: 150},
         {field: 'candidate_ln', headerName: 'Candidate L_name', width: 150},
+        {field: 'score', headerName: 'Hit Score(MAX = 5)', width: 150}
 
     ];
 
@@ -45,8 +47,8 @@ function ListWatchlistMatch() {
             <DataGrid
                 columns={columns}
                 rows={allWatchlist}
-                pageSize={10}
-                rowsPerPageOptions={[10]}
+                pageSize={1}
+                rowsPerPageOptions={[1]}
                 checkboxSelection
                 getRowId={(row: any) =>  generateRandom()}
 

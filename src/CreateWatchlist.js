@@ -27,9 +27,9 @@ const CreateWatchlist = () => {
         if (isReady === true)
 
             axios
-                .post('http://localhost:8080/api/watchlist', {
+                .post('http://localhost:8080/api/watchlists', {
                     // Data to be sent to the server
-                    'Court Name': courtName,
+                    'court_name': courtName,
                     'first_name': firstName,
                     'middle_name': middleName,
                     'last_name': lastName,
@@ -45,7 +45,7 @@ const CreateWatchlist = () => {
                 })
                 .then(response => {
                     console.log(response.data);
-                    alert("Request Created successfully!");
+                    alert("Watchlist Created successfully!");
                 })
                 .catch(function (error) {
                     console.error(error);
