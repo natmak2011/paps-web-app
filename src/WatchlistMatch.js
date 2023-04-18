@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {DataGrid} from '@mui/x-data-grid';
 import axios from "axios";
 import {GridColDef} from "@mui/x-data-grid";
+import Button from "@mui/material/Button";
 //import {API_BASE_URL} from "./constants";
 
 
@@ -43,6 +44,7 @@ function ListWatchlistMatch() {
     ];
 
     return (
+
         <div style={{height: 400, width: '100%', marginTop: '30px'}}>
             <DataGrid
                 columns={columns}
@@ -51,10 +53,22 @@ function ListWatchlistMatch() {
                 rowsPerPageOptions={[1]}
                 checkboxSelection
                 getRowId={(row: any) =>  generateRandom()}
+                          />
 
-            />
+            <div align={'center'} style={{marginTop: '20px',}}>
+             <Button variant="contained" onClick={() => (true)}>Positive</Button> &nbsp;&nbsp;&nbsp;
+             <Button variant="contained" onClick={() => (true)}>Negative</Button> </div>
+
+
         </div>
+
+
+
+
     );
+
+
+
 }
 
 export default ListWatchlistMatch;
