@@ -31,6 +31,7 @@ export default function Header() {
                     </Typography>
 
                     <Button variant="contained" onClick={() => navigate('/request')}>Create Request</Button>
+                    <Button variant="contained" onClick={() => navigate('/request/status')}>Check Status</Button>
                     <Button variant="contained" onClick={() => navigate('/watchlist')}>Create Watchlist</Button>
                     <Button variant="contained" onClick={() => navigate('/watchlist/matches')}>List Matches</Button>
                 </Toolbar>
