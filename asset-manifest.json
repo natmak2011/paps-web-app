@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/paps-web-app/static/css/main.f1253c27.css",
-    "main.js": "/paps-web-app/static/js/main.c75a22a7.js",
+    "main.js": "/paps-web-app/static/js/main.da83d81d.js",
     "static/js/787.d4bddcab.chunk.js": "/paps-web-app/static/js/787.d4bddcab.chunk.js",
     "index.html": "/paps-web-app/index.html",
     "main.f1253c27.css.map": "/paps-web-app/static/css/main.f1253c27.css.map",
-    "main.c75a22a7.js.map": "/paps-web-app/static/js/main.c75a22a7.js.map",
+    "main.da83d81d.js.map": "/paps-web-app/static/js/main.da83d81d.js.map",
     "787.d4bddcab.chunk.js.map": "/paps-web-app/static/js/787.d4bddcab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1253c27.css",
-    "static/js/main.c75a22a7.js"
+    "static/js/main.da83d81d.js"
   ]
 }
