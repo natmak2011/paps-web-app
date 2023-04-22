@@ -7,6 +7,7 @@ import CreateWatchlist  from "./CreateWatchlist";
 import {Route, Routes} from "react-router-dom";
 import WatchlistMatch from "./WatchlistMatch";
 import CheckStatus from "./CheckStatus";
+import ValidationList from "./ValidationList";
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
                   <Route path="/watchlist" element={<CreateWatchlist/>}/>
                   <Route path="/watchlist/matches" element={<WatchlistMatch/>}/>
                   <Route path="/request/status" element={<CheckStatus/>}/>
+                  <Route path="/request/validation" element={<ValidationList/>}/>
 
 
 

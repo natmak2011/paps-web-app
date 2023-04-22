@@ -38,12 +38,15 @@ const CreateRequest = () => {
                 })
                 .then(response => {
                     console.log(response.data);
-                    alert("Request Created successfully!");
+                    alert("Request Created successfully, please Check your email for details.");
+                    setIsReady(false);
                 })
                 .catch(function (error) {
                     console.error(error);
                     alert("Error happened");
+                    setIsReady(false);
                 });
+
 
 
     }, [isReady, firstName, middleName, lastName, dateOfBirth, phoneNumber, email,passportNumber]);
@@ -64,7 +67,10 @@ const CreateRequest = () => {
 
         <div style={{marginTop: '20px'}}> <Button variant="contained" onClick={() => setIsReady(true)}>Create Request</Button> </div>
 
+
     </div>;
+
+
 }
 
 export default CreateRequest;

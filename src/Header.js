@@ -34,6 +34,7 @@ export default function Header() {
                     <Button variant="contained" onClick={() => navigate('/request/status')}>Check Status</Button>
                     <Button variant="contained" onClick={() => navigate('/watchlist')}>Create Watchlist</Button>
                     <Button variant="contained" onClick={() => navigate('/watchlist/matches')}>List Matches</Button>
+                    <Button variant="contained" onClick={() => navigate('/request/validation')}>Validation</Button>
                 </Toolbar>
             </AppBar>
         </Box>
